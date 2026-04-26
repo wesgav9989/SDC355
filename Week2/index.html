@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        Author: Wesley Gavitt
+        Date:
+        Purpose: Personal portfolio homepage with JavaScript interaction
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wesley Gavitt | Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <label class="dark-mode-control">
+                <input type="checkbox" id="darkModeToggle">
+                Dark Mode
+            </label>
+
+            <h1>Wesley Gavitt</h1>
+            <p id="welcomeMessage">Welcome to my homepage!</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#about">About</a>
+            <a href="#featured">Featured Content</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                My name is Wesley Gavitt, and I am studying web development and programming.
+                I enjoy building websites that are clean, practical, and easy for users to navigate.
+                As I continue learning HTML, CSS, and JavaScript, I am focused on improving both
+                my technical skills and my ability to create professional-looking web pages.
+            </p>
+
+            <h3>Skills and Technologies</h3>
+            <ul id="skillsList"></ul>
+        </section>
+
+        <section id="featured">
+            <h2>Featured Content</h2>
+
+            <div id="universityResources" class="featured-box">
+                <h3>University Resources</h3>
+                <p>
+                    These links provide helpful resources related to my program and school.
+                </p>
+                <a href="https://www.ecpi.edu/programs" target="_blank">ECPI University Programs</a>
+            </div>
+
+            <div id="personalProjects" class="featured-box">
+                <h3>Personal Projects</h3>
+                <p>
+                    These links highlight personal projects and web-based work.
+                </p>
+                <a href="https://github.com/" target="_blank">My GitHub Projects</a>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Here are a few project links that represent my work and future portfolio pieces.</p>
+
+            <div class="project-grid">
+                <a class="project-card" href="https://github.com/" target="_blank">
+                    <img src="https://via.placeholder.com/300x180" alt="Project 1 placeholder image">
+                    <h3>Project One</h3>
+                    <p>A sample GitHub project link for a completed or future web development project.</p>
+                </a>
+
+                <a class="project-card" href="https://github.com/" target="_blank">
+                    <img src="https://via.placeholder.com/300x180" alt="Project 2 placeholder image">
+                    <h3>Project Two</h3>
+                    <p>A placeholder for another project that demonstrates growth in coding and design.</p>
+                </a>
+
+                <a class="project-card" href="https://github.com/" target="_blank">
+                    <img src="https://via.placeholder.com/300x180" alt="Project 3 placeholder image">
+                    <h3>Project Three</h3>
+                    <p>A third project space that can later be updated with a real GitHub repository.</p>
+                </a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Use the form below to send a message.</p>
+
+            <form id="contactForm">
+                <label for="name">Sender Name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Sender Email Address</label>
+                <input type="email" id="email" name="email">
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit" id="submitButton">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Wesley Gavitt</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
