@@ -1,0 +1,156 @@
+/*
+    Author: Wesley Gavitt
+    Date: 4/29/2026
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    color: #222;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.dark-mode-control {
+    display: block;
+    margin-bottom: 15px;
+}
+
+nav {
+    background: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.featured-box {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+.project-grid {
+    display: flex;
+    gap: 10px;
+}
+
+.project-card {
+    background: #ddd;
+    padding: 20px;
+}
+
+/* Modal overlay dims the page behind the welcome box */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal box displayed when the page loads */
+.modal-box {
+    background: white;
+    color: black;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.modal-box button {
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+/* Tooltip wrapper for the submit button */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+/* Tooltip message hidden by default */
+.tooltip .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    background: black;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+/* Tooltip appears when hovering over the button area */
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: black;
+    color: white;
+}
+
+.dark-mode section {
+    background: #222;
+    color: white;
+}
+
+.dark-mode header {
+    background: #111;
+}
+
+.dark-mode nav {
+    background: #222;
+}
+
+.dark-mode .project-card {
+    background: #333;
+}
+
+.dark-mode .featured-box {
+    border-color: #777;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background: #111;
+    color: white;
+    border: 1px solid #777;
+}
